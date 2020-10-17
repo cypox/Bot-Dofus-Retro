@@ -65,15 +65,23 @@ namespace Bot_Dofus_1._29._1.Comun.Frames.LoginCuenta
                 }
             }
 
-            if(!firstTime && server.serverState == ServerStates.ONLINE)
+            if (!firstTime && server.serverState == ServerStates.ONLINE)
+            {
+                prmClient.SendPacket("Ap433");
+                prmClient.SendPacket("Ai314d20742-415e-4294-8bdb-cf8e2266899e6");
                 prmClient.SendPacket("Ax");
+            }
         }
 
         [PaqueteAtributo("AQ")]
         public void GetSecretQuestion(TcpClient prmClient, string prmPacket)
         {
             if (prmClient.account.game.server.serverState == ServerStates.ONLINE)
+            {
+                prmClient.SendPacket("Ap433");
+                prmClient.SendPacket("Ai314d20742-415e-4294-8bdb-cf8e2266899e6");
                 prmClient.SendPacket("Ax", true);
+            }
         }
 
         [PaqueteAtributo("AxK")]
