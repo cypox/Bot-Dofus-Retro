@@ -77,6 +77,7 @@
     <Compile Include="Comun\Frames\Autentificacion\AutentificacionLoginFrame.cs" />
     <Compile Include="Comun\Frames\Juego\AutentificacionJuego.cs" />
     <Compile Include="Comun\Frames\Juego\ChatFrame.cs" />
+    <Compile Include="Comun\Frames\Juego\Craft.cs" />
     <Compile Include="Comun\Frames\Juego\IMFrame.cs" />
     <Compile Include="Comun\Frames\Juego\MapFrame.cs" />
     <Compile Include="Comun\Frames\Juego\NPCFrame.cs" />
@@ -137,6 +138,12 @@
     </Compile>
     <Compile Include="Comun\Frames\Autentificacion\AccountLogin.cs" />
     <Compile Include="Comun\Frames\Frame.cs" />
+    <Compile Include="Interfaces\UI_Craft.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\UI_Craft.Designer.cs">
+      <DependentUpon>UI_Craft.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\UI_Hechizos.cs">
       <SubType>UserControl</SubType>
     </Compile>

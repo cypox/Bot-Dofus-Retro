@@ -24,6 +24,7 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Character.Inventory
         public short nivel { get; private set; } = 0;
         public byte tipo { get; private set; }
         public short vida_regenerada { get; }
+        public string stats { get; set; }
         public InventoryObjectsTypes tipo_inventario { get; private set; } = InventoryObjectsTypes.UNKNOWN;
         private readonly XElement archivo_objeto;
 
@@ -37,6 +38,8 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Character.Inventory
 
             if (!string.IsNullOrEmpty(separador[3]))
                 posicion = (InventorySlots)Convert.ToSByte(separador[3], 16);
+
+            stats = separador[4];
 
             string[] split = separador[4].Split(',');
             foreach (string stat in split)

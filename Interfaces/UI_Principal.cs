@@ -304,6 +304,7 @@ namespace Bot_Dofus_1._29._1.Interfaces
             cuenta.fightExtension.configuracion.cargar();
             agregar_Tab_Pagina("Map", new UI_Mapa(cuenta), 4);
             agregar_Tab_Pagina("Combat", new UI_Pelea(cuenta), 5);
+            agregar_Tab_Pagina("Craft", new UI_Craft(cuenta), 6);
 
             cambiar_Todos_Controles_Chat(true);
             cargar_Canales_Chat();

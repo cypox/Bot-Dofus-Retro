@@ -21,6 +21,12 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Character
 {
     public class CharacterClass : Entidad, IEliminable
     {
+        // TODO MOVE THESE TO A CRAFT CLASS
+        public InventoryObject fm_object { get; set; } = null;
+        public int success_rate { get; set; } = 0;
+        public int total_crafts { get; set; } = 0;
+        // END TODO
+
         public int id { get; set; } = 0;
         public string nombre { get; set; }
         public byte nivel { get; set; } = 0;

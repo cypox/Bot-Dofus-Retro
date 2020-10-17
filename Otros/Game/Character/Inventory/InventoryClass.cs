@@ -10,7 +10,7 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Character.Inventory
     public class InventoryClass : IDisposable, IEliminable
     {
         private Account cuenta;
-        private ConcurrentDictionary<uint, InventoryObject> _objetos;
+        public ConcurrentDictionary<uint, InventoryObject> _objetos;
         private bool disposed;
 
         //Propiedades
