@@ -48,6 +48,8 @@ namespace Bot_Dofus_1._29._1.Otros.Game.Character.Inventory
                     if (!string.IsNullOrEmpty(obj))
                     {
                         string[] separador = obj.Split('~');
+                        if (separador.Length <= 3) // TODO: the last bit added after 1.33 has less than 3 parts
+                            continue;
                         uint id_inventario = Convert.ToUInt32(separador[0], 16);
                         InventoryObject objeto = new InventoryObject(obj);
                         _objetos.TryAdd(id_inventario, objeto);
