@@ -48,8 +48,10 @@ namespace Bot_Dofus_1._29._1.Interfaces
             comboBox_lista_hechizos.ValueMember = "id";
             comboBox_lista_hechizos.DataSource = cuenta.game.character.hechizos.Values.ToList();
 
+            /*
             if(cuenta.game.character.hechizos.Values.ToList().Count > 0)
                 comboBox_lista_hechizos.SelectedIndex = 0;
+            */
         }
 
         private void button_agregar_hechizo_Click(object sender, EventArgs e)
