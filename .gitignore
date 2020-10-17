@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Bot_Dofus_1.29.1/v16
+/bin/Debug
+/obj/Debug
+/bin
+/obj/Release
+/.vs
+/mapas
